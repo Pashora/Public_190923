@@ -1,0 +1,7 @@
+@ParameterizedTest
+@MethodSource("validData")
+void sumOfTwoPositiveNumbers(int a, int b, int expected) {
+        Sum sum = new Sum();
+        int actualSumValue = sum.sumOfTwoNumbers(a,b);
+        int expectedSumValue = expected;
+        assertEquals(actualSumValue, expectedSumValue);
